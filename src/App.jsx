@@ -14,13 +14,13 @@ function App() {
   const [realtors, setRealtors] = useState([]);
 
   useEffect(() => {
-    fetch(`https://ecohome-json-server.onrender.com/listings`)
+    fetch(`https://portfolio-json-server.onrender.com/listings`)
       .then((r) => r.json())
       .then((data) => setHouses(data));
   }, []);
 
   useEffect(() => {
-    fetch('https://ecohome-json-server.onrender.com/realtors')
+    fetch('https://portfolio-json-server.onrender.com/realtors')
       .then((r) => r.json())
       .then((data) => setRealtors(data));
   }, []);
